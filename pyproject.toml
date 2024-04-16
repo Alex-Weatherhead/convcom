@@ -37,3 +37,6 @@ Issues = "https://github.com/Alex-Weatherhead/convcom/issues"
 addopts = [
     "--import-mode=importlib",
 ]
+
+[tool.setuptools_scm]
+# This table is required to enable setuptools_scm
