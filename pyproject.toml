@@ -13,7 +13,7 @@ maintainers = [
     {name = "Alex Weatherhead", email = "22604743+Alex-Weatherhead@users.noreply.github.com"},
 ]
 description = "A simple pure-Python module for parsing conventional commits."
-readme = {file = "README.txt", content-type = "text/markdown"}
+readme = {file = "README.md", content-type = "text/markdown"}
 license = {file = "LICENSE.md"}
 keywords = ["Conventional Commits"]
 classifiers = [
