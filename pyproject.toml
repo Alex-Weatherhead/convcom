@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools >= 64.0", "setuptools-scm >= 8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convcom"
+dynamic = ["version"]
+requires-python = ">=3.8"
+authors = [
+    {name = "Alex Weatherhead", email = "22604743+Alex-Weatherhead@users.noreply.github.com"},
+]
+maintainers = [
+    {name = "Alex Weatherhead", email = "22604743+Alex-Weatherhead@users.noreply.github.com"},
+]
+description = "A simple pure-Python module for parsing conventional commits."
+readme = {file = "README.txt", content-type = "text/markdown"}
+license = {file = "LICENSE.md"}
+keywords = ["Conventional Commits"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+development = [
+    "black>=24.4.0",
+    "mypy>=1.9.0",
+    "pytest>=7.4.1",
+    "twine>=5.0.0"
+]
+
+[project.urls]
+Repository = "https://github.com/Alex-Weatherhead/convcom"
+Issues = "https://github.com/Alex-Weatherhead/convcom/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
